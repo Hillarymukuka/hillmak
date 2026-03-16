@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://hillmak.co.zm/sitemap.xml',
+    sitemap: 'https://www.hillmak.co.zm/sitemap.xml',
   };
 }

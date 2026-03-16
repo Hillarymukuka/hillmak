@@ -70,7 +70,7 @@ export default function Footer() {
               <li>+260 968 601 181</li>
               <li>info@hillmak.co.zm</li>
               <li>Lusaka Zambia</li>
-              <li>hillmak.co.zm</li>
+              <li>www.hillmak.co.zm</li>
             </ul>
           </div>
 

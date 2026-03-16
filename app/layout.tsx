@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hillmak.co.zm'),
+  metadataBase: new URL('https://www.hillmak.co.zm'),
   title: {
     default: 'HillMak | Technology & Creative Solutions — Zambia',
     template: '%s | HillMak',
@@ -23,23 +23,21 @@ export const metadata: Metadata = {
     'enterprise software Africa', 'AI automation Zambia', 'digital marketing Lusaka',
     'creative agency Zambia', 'procurement platforms Africa', 'HillMak Creative', 'HillMak Technology',
   ],
-  authors: [{ name: 'HillMak', url: 'https://hillmak.co.zm' }],
+  authors: [{ name: 'HillMak', url: 'https://www.hillmak.co.zm' }],
   creator: 'HillMak',
   openGraph: {
     type: 'website',
     locale: 'en_ZM',
-    url: 'https://hillmak.co.zm',
+    url: 'https://www.hillmak.co.zm',
     siteName: 'HillMak',
     title: 'HillMak | Technology & Creative Solutions — Zambia',
     description:
       'Enterprise software, AI systems, brand identity, and digital marketing solutions. Two divisions. One vision. Built in Zambia.',
-    images: [{ url: '/FAVIcon.jpg', width: 1200, height: 630, alt: 'HillMak' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HillMak | Technology & Creative Solutions — Zambia',
     description: 'Enterprise software, AI systems, brand identity, and digital marketing. Built in Zambia.',
-    images: ['/FAVIcon.jpg'],
   },
   icons: {
     icon: [
