@@ -438,13 +438,12 @@ function ClientLogoCard({
       />
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center gap-3 p-5">
+      <div className="relative z-10 h-full flex flex-col items-center justify-center gap-1.5 sm:gap-3 p-3 sm:p-5">
         {/* Logo image */}
         <motion.div
           animate={{ scale: hovered ? 1.06 : 1 }}
           transition={{ duration: 0.3, ease: 'backOut' }}
-          className="relative w-full flex items-center justify-center"
-          style={{ height: 84 }}
+          className="relative w-full flex-1 min-h-0"
         >
           <Image
             src={client.logo}
