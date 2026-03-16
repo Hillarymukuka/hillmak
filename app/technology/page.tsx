@@ -91,7 +91,7 @@ export default function TechnologyPage() {
           className="absolute inset-0 z-0 w-full h-[130%] -top-[15%]"
         >
           <Image
-            src="/Hero section ( Technology ).avif"
+            src="/hero-section-technology.avif"
             alt="HillMak Technology"
             fill
             className="object-cover opacity-55"
@@ -213,7 +213,7 @@ export default function TechnologyPage() {
               className="relative h-[420px] md:h-[540px] rounded-2xl overflow-hidden"
             >
               <Image
-                src="/modern Tech.avif"
+                src="/modern-tech.avif"
                 alt="Modern Technology"
                 fill
                 className="object-cover"

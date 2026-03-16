@@ -40,7 +40,7 @@ export default function HomePage() {
           className="absolute inset-0 z-0 w-full h-[130%] -top-[15%]"
         >
           <Image
-            src="/Hero section.avif"
+            src="/hero-section.avif"
             alt="Hero Background"
             fill
             className="object-cover opacity-60"
@@ -87,7 +87,7 @@ export default function HomePage() {
               className="relative h-[500px] md:h-[600px]"
             >
               <Image
-                src="/Second Photo.avif"
+                src="/second-photo.avif"
                 alt="Strategy meets technology"
                 fill
                 className="object-cover rounded-2xl"
@@ -144,7 +144,7 @@ export default function HomePage() {
             className="absolute inset-0 w-full h-[130%] -top-[15%]"
           >
             <Image
-              src="/hillmak Tech Photo.avif"
+              src="/hillmak-tech-photo.avif"
               alt="HillMak Technology"
               fill
               className="object-cover"
@@ -216,7 +216,7 @@ export default function HomePage() {
             className="absolute inset-0 w-full h-[130%] -top-[15%]"
           >
             <Image
-              src="/HillMak Creative side  Photo.avif"
+              src="/hillmak-creative-side-photo.avif"
               alt="HillMak Creative"
               fill
               className="object-cover"
@@ -319,7 +319,7 @@ export default function HomePage() {
               className="relative h-[500px] md:h-[600px]"
             >
               <Image
-                src="/mission and vision image.avif"
+                src="/mission-and-vision-image.avif"
                 alt="Our Mission and Vision"
                 fill
                 className="object-cover rounded-2xl"

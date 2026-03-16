@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     description:
       'Brand identity, digital marketing, exhibition branding, and content production for ambitious businesses across Zambia and Africa.',
     url: 'https://hillmak.co.zm/creative',
-    images: [{ url: '/HillMak Creative Hero.avif', width: 1200, height: 630, alt: 'HillMak Creative' }],
+    images: [{ url: '/hillmak-creative-hero.avif', width: 1200, height: 630, alt: 'HillMak Creative' }],
   },
   twitter: {
     title: 'HillMak Creative | Where Brands Come Alive',
     description: 'Brand identity, digital marketing, exhibition branding, and content production across Africa.',
-    images: ['/HillMak Creative Hero.avif'],
+    images: ['/hillmak-creative-hero.avif'],
   },
   alternates: {
     canonical: 'https://hillmak.co.zm/creative',

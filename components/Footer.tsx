@@ -25,7 +25,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="md:col-span-1">
             <Image
-              src="/hillmak logo.svg"
+              src="/hillmak-logo.svg"
               alt="HillMak Logo"
               width={140}
               height={48}

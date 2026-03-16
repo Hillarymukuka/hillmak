@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     description:
       'Custom enterprise applications, AI systems, and digital infrastructure engineered for scale. Built for businesses across Africa.',
     url: 'https://hillmak.co.zm/technology',
-    images: [{ url: '/Hero section ( Technology ).avif', width: 1200, height: 630, alt: 'HillMak Technology' }],
+    images: [{ url: '/hero-section-technology.avif', width: 1200, height: 630, alt: 'HillMak Technology' }],
   },
   twitter: {
     title: 'HillMak Technology | Enterprise Software & AI Solutions',
     description: 'Custom enterprise applications, AI systems, and digital infrastructure engineered for scale.',
-    images: ['/Hero section ( Technology ).avif'],
+    images: ['/hero-section-technology.avif'],
   },
   alternates: {
     canonical: 'https://hillmak.co.zm/technology',

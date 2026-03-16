@@ -61,7 +61,7 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center" onClick={() => setMobileOpen(false)}>
               <Image
-                src="/hillmak logo.svg"
+                src="/hillmak-logo.svg"
                 alt="HillMak Logo"
                 width={120}
                 height={40}
