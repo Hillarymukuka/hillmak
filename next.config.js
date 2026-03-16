@@ -27,6 +27,7 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: [],
     formats: ['image/avif', 'image/webp'],
   },
