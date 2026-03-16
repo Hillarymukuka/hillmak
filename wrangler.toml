@@ -1,0 +1,6 @@
+name = "hillmak-website"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Add environment variables here or set them in the Cloudflare dashboard
