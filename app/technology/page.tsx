@@ -328,13 +328,12 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="relative h-10 w-36">
-                  <Image
+                <div className="h-10 w-36">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src="/Solutions/Ancestra.svg"
                     alt="Ancestra"
-                    fill
-                    className="object-contain object-left"
-                    sizes="144px"
+                    className="h-full w-auto object-contain object-left"
                   />
                 </div>
                 <span className="shrink-0 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-tech-accent/30 text-tech-accent bg-tech-accent/10">
@@ -382,13 +381,12 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="relative h-10 w-36">
-                  <Image
+                <div className="h-10 w-36">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src="/Solutions/Ancestro.png"
                     alt="Ancestro AI"
-                    fill
-                    className="object-contain object-left"
-                    sizes="144px"
+                    className="h-full w-auto object-contain object-left"
                   />
                 </div>
                 <span className="shrink-0 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-tech-accent/30 text-tech-accent bg-tech-accent/10">
