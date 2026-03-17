@@ -329,6 +329,113 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Clients & Partners Section */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="container-custom mb-14 text-center">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-xs uppercase tracking-[0.2em] text-tech-accent font-semibold mb-3"
+          >
+            Trusted By
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-3xl md:text-4xl font-bold text-tech-bg tracking-tight mb-4"
+          >
+            Our Clients &amp; Partners
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-base text-gray-500 max-w-xl mx-auto leading-relaxed"
+          >
+            We are proud to work alongside forward-thinking organisations across industries — from mining and finance to sport and government.
+          </motion.p>
+        </div>
+
+        {/* Marquee rows */}
+        <div className="relative overflow-hidden">
+          {/* Fade left edge */}
+          <div className="pointer-events-none absolute left-0 inset-y-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10" aria-hidden />
+          {/* Fade right edge */}
+          <div className="pointer-events-none absolute right-0 inset-y-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10" aria-hidden />
+
+          {/* Row 1 — scrolls left */}
+          <div className="flex w-max animate-marquee gap-6 items-center mb-5">
+            {[
+              { src: '/Clients_partners/Amrod.jpg', alt: 'Amrod' },
+              { src: '/Clients_partners/avis-fleet-zambia.png', alt: 'Avis Fleet Zambia' },
+              { src: '/Clients_partners/cosmo.jpg', alt: 'Cosmo' },
+              { src: '/Clients_partners/dromex.jpg', alt: 'Dromex' },
+              { src: '/Clients_partners/Enisco.png', alt: 'Enisco' },
+              { src: '/Clients_partners/kafue-gorge.png', alt: 'Kafue Gorge' },
+              { src: '/Clients_partners/Media.jpg', alt: 'Media' },
+              { src: '/Clients_partners/Mopani.jpg', alt: 'Mopani' },
+              { src: '/Clients_partners/my-cab.webp', alt: 'My Cab' },
+              /* duplicate for seamless loop */
+              { src: '/Clients_partners/Amrod.jpg', alt: 'Amrod' },
+              { src: '/Clients_partners/avis-fleet-zambia.png', alt: 'Avis Fleet Zambia' },
+              { src: '/Clients_partners/cosmo.jpg', alt: 'Cosmo' },
+              { src: '/Clients_partners/dromex.jpg', alt: 'Dromex' },
+              { src: '/Clients_partners/Enisco.png', alt: 'Enisco' },
+              { src: '/Clients_partners/kafue-gorge.png', alt: 'Kafue Gorge' },
+              { src: '/Clients_partners/Media.jpg', alt: 'Media' },
+              { src: '/Clients_partners/Mopani.jpg', alt: 'Mopani' },
+              { src: '/Clients_partners/my-cab.webp', alt: 'My Cab' },
+            ].map((logo, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 flex items-center justify-center w-40 h-20 rounded-xl bg-gray-50 border border-gray-100 px-5 py-3 grayscale hover:grayscale-0 transition-all duration-300 hover:shadow-md hover:border-gray-200 hover:scale-105"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={logo.src} alt={logo.alt} className="max-h-full max-w-full object-contain" />
+              </div>
+            ))}
+          </div>
+
+          {/* Row 2 — scrolls right */}
+          <div className="flex w-max animate-marquee-reverse gap-6 items-center">
+            {[
+              { src: '/Clients_partners/Rebel.jpg', alt: 'Rebel' },
+              { src: '/Clients_partners/Redspot.jpg', alt: 'Redspot' },
+              { src: '/Clients_partners/Sanlam.png', alt: 'Sanlam' },
+              { src: '/Clients_partners/Veritas.jpg', alt: 'Veritas' },
+              { src: '/Clients_partners/VVob.jpg', alt: 'VVob' },
+              { src: '/Clients_partners/xahara-tools.webp', alt: 'Xahara Tools' },
+              { src: '/Clients_partners/zambia-olympics.png', alt: 'Zambia Olympics' },
+              { src: '/Clients_partners/zambia-statstics.png', alt: 'Zambia Statistics' },
+              { src: '/Clients_partners/ZPPA.png', alt: 'ZPPA' },
+              /* duplicate for seamless loop */
+              { src: '/Clients_partners/Rebel.jpg', alt: 'Rebel' },
+              { src: '/Clients_partners/Redspot.jpg', alt: 'Redspot' },
+              { src: '/Clients_partners/Sanlam.png', alt: 'Sanlam' },
+              { src: '/Clients_partners/Veritas.jpg', alt: 'Veritas' },
+              { src: '/Clients_partners/VVob.jpg', alt: 'VVob' },
+              { src: '/Clients_partners/xahara-tools.webp', alt: 'Xahara Tools' },
+              { src: '/Clients_partners/zambia-olympics.png', alt: 'Zambia Olympics' },
+              { src: '/Clients_partners/zambia-statstics.png', alt: 'Zambia Statistics' },
+              { src: '/Clients_partners/ZPPA.png', alt: 'ZPPA' },
+            ].map((logo, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 flex items-center justify-center w-40 h-20 rounded-xl bg-gray-50 border border-gray-100 px-5 py-3 grayscale hover:grayscale-0 transition-all duration-300 hover:shadow-md hover:border-gray-200 hover:scale-105"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={logo.src} alt={logo.alt} className="max-h-full max-w-full object-contain" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-[#0A1628] py-20 md:py-32">
         <div className="container-custom">
