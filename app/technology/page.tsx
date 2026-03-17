@@ -328,12 +328,12 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="h-10 w-36">
+                <div className="w-48 h-16">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/Solutions/Ancestra.svg"
                     alt="Ancestra"
-                    className="h-full w-auto object-contain object-left"
+                    className="w-full h-full object-contain object-left"
                   />
                 </div>
                 <span className="shrink-0 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-tech-accent/30 text-tech-accent bg-tech-accent/10">
@@ -381,7 +381,7 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="h-10 w-36">
+                <div className="h-14 w-44">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/Solutions/Ancestro.png"
