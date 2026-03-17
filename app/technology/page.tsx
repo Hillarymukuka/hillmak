@@ -321,11 +321,11 @@ export default function TechnologyPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.55, ease: 'easeOut' }}
               whileHover={{ y: -4 }}
-              className="group relative rounded-2xl border border-white/8 bg-white/[0.03] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
+              className="group relative rounded-2xl bg-white/[0.04] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
             >
               {/* Glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.08) 0%, transparent 70%)' }} />
+                style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
                 <div className="relative h-10 w-36">
@@ -375,11 +375,11 @@ export default function TechnologyPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: 0.1, ease: 'easeOut' }}
               whileHover={{ y: -4 }}
-              className="group relative rounded-2xl border border-white/8 bg-white/[0.03] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
+              className="group relative rounded-2xl bg-white/[0.04] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
             >
               {/* Glow */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.08) 0%, transparent 70%)' }} />
+                style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
                 <div className="relative h-10 w-36">
