@@ -129,19 +129,23 @@ export default function Navigation() {
               transition={{ duration: 0.25, ease: 'easeInOut' }}
               className="md:hidden overflow-hidden border-t border-white/10"
             >
-              <div className="container-custom py-6 flex flex-col gap-1">
-                {navLinks.map((link) => {
+              <div className="container-custom py-6 flex flex-col gap-0">
+                {navLinks.map((link, i) => {
                   const isActive = pathname === link.href;
                   return (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className={`py-3.5 px-2 text-base font-medium transition-colors border-b border-white/8 ${
-                        isActive ? activeColor : `${textColor} ${hoverColor}`
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
+                    <div key={link.href}>
+                      <Link
+                        href={link.href}
+                        className={`block py-3.5 px-2 text-base font-medium transition-colors ${
+                          isActive ? activeColor : `${textColor} ${hoverColor}`
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                      {i < navLinks.length - 1 && (
+                        <div className="mx-2 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+                      )}
+                    </div>
                   );
                 })}
                 <button
