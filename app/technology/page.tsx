@@ -328,7 +328,7 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="h-24 w-64">
+                <div className="h-48 w-full">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/Solutions/Ancestra.png"
@@ -381,7 +381,7 @@ export default function TechnologyPage() {
                 style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.10) 0%, transparent 70%)' }} />
               {/* Top row: logo + badge */}
               <div className="flex items-start justify-between gap-4">
-                <div className="h-24 w-64">
+                <div className="h-48 w-full">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/Solutions/Ancestro.png"
