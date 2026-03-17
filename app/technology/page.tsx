@@ -278,6 +278,150 @@ export default function TechnologyPage() {
         </div>
       </section>
 
+      {/* Solutions Section */}
+      <section className="bg-tech-bg py-20 md:py-32">
+        <div className="container-custom">
+          {/* Header */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="mb-14 md:mb-20"
+          >
+            <motion.p
+              variants={fadeUpVariants}
+              className="text-tech-accent text-sm font-semibold tracking-widest uppercase mb-3"
+            >
+              Built in-house
+            </motion.p>
+            <motion.h2
+              variants={fadeUpVariants}
+              className="text-3xl md:text-5xl font-bold text-white leading-tight"
+            >
+              Some of Our Solutions
+            </motion.h2>
+            <motion.p
+              variants={fadeUpVariants}
+              className="mt-4 text-tech-gray/70 text-lg max-w-2xl"
+            >
+              Products we have engineered and deployed — purpose-built for African businesses.
+            </motion.p>
+          </motion.div>
+
+          {/* Cards */}
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            {/* Ancestra Business */}
+            <motion.a
+              href="https://smartbusiness.ancestroai.co.zm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55, ease: 'easeOut' }}
+              whileHover={{ y: -4 }}
+              className="group relative rounded-2xl border border-white/8 bg-white/[0.03] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
+            >
+              {/* Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{ background: 'radial-gradient(ellipse at 30% 0%, rgba(248,143,30,0.08) 0%, transparent 70%)' }} />
+              {/* Top row: logo + badge */}
+              <div className="flex items-start justify-between gap-4">
+                <div className="relative h-10 w-36">
+                  <Image
+                    src="/Solutions/Ancestra.svg"
+                    alt="Ancestra"
+                    fill
+                    className="object-contain object-left"
+                    sizes="144px"
+                  />
+                </div>
+                <span className="shrink-0 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-tech-accent/30 text-tech-accent bg-tech-accent/10">
+                  Live
+                </span>
+              </div>
+              {/* Content */}
+              <div className="flex flex-col gap-3 flex-1">
+                <h3 className="text-xl font-bold text-white">Smart Business Manager</h3>
+                <p className="text-tech-gray/65 text-sm leading-relaxed">
+                  An all-in-one cloud platform for hospitality, retail, and service businesses. Real-time analytics, POS, inventory management,
+                  employee roles, and financial reporting — accessible from any device, anywhere.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {['POS', 'Inventory', 'Analytics', 'Hospitality', 'Retail'].map((tag) => (
+                    <span key={tag} className="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-tech-gray/60 border border-white/8">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* Footer link */}
+              <div className="flex items-center gap-1.5 text-tech-accent text-sm font-medium">
+                <span>smartbusiness.ancestroai.co.zm</span>
+                <svg className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 16 16">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </motion.a>
+
+            {/* Ancestro AI */}
+            <motion.a
+              href="https://www.ancestroai.co.zm"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.55, delay: 0.1, ease: 'easeOut' }}
+              whileHover={{ y: -4 }}
+              className="group relative rounded-2xl border border-white/8 bg-white/[0.03] p-8 md:p-10 overflow-hidden flex flex-col gap-6 cursor-pointer"
+            >
+              {/* Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{ background: 'radial-gradient(ellipse at 70% 0%, rgba(248,143,30,0.08) 0%, transparent 70%)' }} />
+              {/* Top row: logo + badge */}
+              <div className="flex items-start justify-between gap-4">
+                <div className="relative h-10 w-36">
+                  <Image
+                    src="/Solutions/Ancestro.png"
+                    alt="Ancestro AI"
+                    fill
+                    className="object-contain object-left"
+                    sizes="144px"
+                  />
+                </div>
+                <span className="shrink-0 text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full border border-tech-accent/30 text-tech-accent bg-tech-accent/10">
+                  Live
+                </span>
+              </div>
+              {/* Content */}
+              <div className="flex flex-col gap-3 flex-1">
+                <h3 className="text-xl font-bold text-white">Revolutionizing Africa with AI</h3>
+                <p className="text-tech-gray/65 text-sm leading-relaxed">
+                  Zambia's first AI-driven software startup — building intelligent automation, custom AI models, and enterprise tools
+                  tailored to African markets. Products include Evala AI, Nestro AI, Ancestro Procure, and more.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {['AI Automation', 'Custom Software', 'Procurement', 'AI Agents', 'Made in Zambia'].map((tag) => (
+                    <span key={tag} className="text-[11px] px-2.5 py-1 rounded-md bg-white/5 text-tech-gray/60 border border-white/8">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {/* Footer link */}
+              <div className="flex items-center gap-1.5 text-tech-accent text-sm font-medium">
+                <span>ancestroai.co.zm</span>
+                <svg className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 16 16">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+            </motion.a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <Section theme="tech">
         <motion.div
